@@ -1,0 +1,6 @@
+<%= javascript_pack_tag 'sample/index' %>
+<%= stylesheet_pack_tag 'sample/index', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+<%= content_tag(:div,
+                id: "sample-data",
+                data: @sample_data.to_json) do end %>
